@@ -691,7 +691,7 @@ class SigmoidLayer(CostLayer):
                         if model.word_indxs_src[inps[0][k][d]] == '<eol>':
                             break
                 print ''
-                print 'Output: ',
+                print 'Output sig >: ',
                 if character_level:
                     sen = []
                     for k in xrange(values.shape[0]):
@@ -721,7 +721,7 @@ class SigmoidLayer(CostLayer):
                     if model.word_indxs_src[inps[0][k]] == '<eol>':
                         break
             print ''
-            print 'Output: ',
+            print 'Output sig <: ',
             if character_level:
                 sen = []
                 for k in xrange(values.shape[0]):
@@ -912,7 +912,7 @@ class SoftmaxLayer(CostLayer):
                         if model.word_indxs_src[inps[0][k][d]] == '<eol>':
                             break
                 print ''
-                print 'Output: ',
+                print 'Output soft >: ',
                 if character_level:
                     sen = []
                     for k in xrange(values.shape[0]):
@@ -942,7 +942,7 @@ class SoftmaxLayer(CostLayer):
                     if model.word_indxs_src[inps[0][k]] == '<eol>':
                         break
             print ''
-            print 'Output: ',
+            print 'Output soft <: ',
             if character_level:
                 sen = []
                 for k in xrange(values.shape[0]):
