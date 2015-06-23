@@ -892,7 +892,9 @@ class SoftmaxLayer(CostLayer):
             character_level = model.character_level
         if model.del_noise:
             model.del_noise()
+        print type(model)
         [values, probs] = model.sample_fn(length, temp, *inps)
+        
         #print 'Generated sample is:'
         #print
         if values.ndim > 1:
