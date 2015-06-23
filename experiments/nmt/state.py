@@ -10,17 +10,17 @@ def prototype_state():
     # (all Nones in this section are placeholders for required values)
 
     # Source sequences (must be singleton list for backward compatibility)
-    state['source'] = [None]
+    state['source'] = ['/home/nghia/git/GroundHog/experiments/nmt/stok-de-en/binarized_text.de.shuf.h5']
     # Target sequences (must be singleton list for backard compatiblity)
-    state['target'] = [None]
+    state['target'] = ['/home/nghia/git/GroundHog/experiments/nmt/stok-de-en/binarized_text.en.shuf.h5']
     # index -> word dict for the source language
-    state['indx_word'] = None
+    state['indx_word'] = '/home/nghia/git/GroundHog/experiments/nmt/stok-de-en/ivocab.de.pkl' 
     # index -> word dict for the target language
-    state['indx_word_target'] = None
+    state['indx_word_target'] = '/home/nghia/git/GroundHog/experiments/nmt/stok-de-en/ivocab.en.pkl'
     # word -> index dict for the source language
-    state['word_indx'] = None
+    state['word_indx'] = '/home/nghia/git/GroundHog/experiments/nmt/stok-de-en/vocab.de.pkl'
     # word -> index dict for the target language
-    state['word_indx_trgt'] = None
+    state['word_indx_trgt'] = '/home/nghia/git/GroundHog/experiments/nmt/stok-de-en/vocab.en.pkl'
 
     # ----- VOCABULARIES -----
     # (all Nones in this section are placeholders for required values)
@@ -31,11 +31,11 @@ def prototype_state():
     state['unk_sym_source'] = 1
     state['unk_sym_target'] = 1
     # These are end-of-sequence marks
-    state['null_sym_source'] = None
-    state['null_sym_target'] = None
+    state['null_sym_source'] = 30000
+    state['null_sym_target'] = 30000
     # These are vocabulary sizes for the source and target languages
-    state['n_sym_source'] = None
-    state['n_sym_target'] = None
+    state['n_sym_source'] = 30000 + 1
+    state['n_sym_target'] = 30000 + 1
 
     # ----- MODEL STRUCTURE -----
 
@@ -231,6 +231,19 @@ def prototype_phrase_state():
     state['null_sym_target'] = 15000
     state['n_sym_source'] = state['null_sym_source'] + 1
     state['n_sym_target'] = state['null_sym_target'] + 1
+
+    return state
+
+def prototype_fr_state():
+    state = prototype_state()
+    state['source'] = ['/home/nghia/git/GroundHog/experiments/nmt/tok-fr-en/binarized_text.fr.shuf.h5']
+    state['target'] = ['/home/nghia/git/GroundHog/experiments/nmt/tok-fr-en/binarized_text.en.shuf.h5']
+    state['indx_word'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-fr-en/ivocab.fr.pkl' 
+    state['indx_word_target'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-fr-en/ivocab.en.pkl'
+    state['word_indx'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-fr-en/vocab.fr.pkl'
+    state['word_indx_trgt'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-fr-en/vocab.en.pkl'
+    
+    state['prefix'] = 'encdec_'
 
     return state
 
