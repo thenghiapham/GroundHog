@@ -1001,12 +1001,16 @@ class Decoder(EncoderDecoderBase):
 
         # Check parameter consistency
         if mode == Decoder.EVALUATION:
+            print "EVALUATION"
             assert not given_init_states
         else:
             assert not y_mask
             assert given_init_states
             if mode == Decoder.BEAM_SEARCH:
+                print "BEAM"
                 assert T == 1
+            else:
+                print "SAMPLING"
 
         # For log-likelihood evaluation the representation
         # be replicated for conveniency. In case backward RNN is used
