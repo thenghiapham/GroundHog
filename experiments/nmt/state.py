@@ -247,6 +247,17 @@ def prototype_fr_state():
 
     return state
 
+def prototype_autoencoder_state():
+    state = prototype_state()
+    state['source'] = ['/home/thenghiapham/git/GroundHog/experiments/nmt/tok-de-en/binarized_text.en.shuf.h5']
+    state['target'] = ['/home/thenghiapham/git/GroundHog/experiments/nmt/tok-de-en/binarized_text.en.shuf.h5']
+    state['indx_word'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-de-en/ivocab.en.pkl'
+    state['indx_word_target'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-de-en/ivocab.en.pkl'
+    state['word_indx'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-de-en/vocab.en.pkl'
+    state['word_indx_trgt'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-de-en/vocab.en.pkl'
+    state['prefix'] = 'autoenc_'
+    return state
+
 def prototype_encdec_state():
     """This prototype is the configuration used to train the RNNenc-30 model from the paper
     'Neural Machine Translation by Jointly Learning to Align and Translate' """
