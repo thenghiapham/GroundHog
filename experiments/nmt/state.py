@@ -260,12 +260,12 @@ def prototype_autoencoder_state():
 
 def prototype_sim_en():
     state = prototype_state()
-    state['source'] = ['/home/thenghiapham/git/GroundHog/experiments/nmt/tok-simplify/binarized_text.wik.shuf.h5']
-    state['target'] = ['/home/thenghiapham/git/GroundHog/experiments/nmt/tok-simplify/binarized_text.sim.shuf.h5']
-    state['indx_word'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-simplify/ivocab.wik.pkl'
-    state['indx_word_target'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-simplify/ivocab.wik.pkl'
-    state['word_indx'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-simplify/vocab.sim.pkl'
-    state['word_indx_trgt'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-simplify/vocab.sim.pkl'
+    state['source'] = ['/home/nghia/git/GroundHog/experiments/nmt/tok-simplify/binarized_text.wik.shuf.h5']
+    state['target'] = ['/home/nghia/git/GroundHog/experiments/nmt/tok-simplify/binarized_text.sim.shuf.h5']
+    state['indx_word'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-simplify/ivocab.wik.pkl'
+    state['indx_word_target'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-simplify/ivocab.wik.pkl'
+    state['word_indx'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-simplify/vocab.sim.pkl'
+    state['word_indx_trgt'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-simplify/vocab.sim.pkl'
         # These are end-of-sequence marks
     state['null_sym_source'] = 10000
     state['null_sym_target'] = 10000
