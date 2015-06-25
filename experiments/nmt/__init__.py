@@ -10,4 +10,5 @@ from state import\
     prototype_search_state,\
     prototype_fr_state,\
     prototype_autoencoder_state,\
-    prototype_sim_en
+    prototype_sim_en,\
+    prototype_sim_dk
