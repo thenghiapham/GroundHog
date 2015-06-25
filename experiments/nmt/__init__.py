@@ -9,4 +9,5 @@ from state import\
     prototype_encdec_state,\
     prototype_search_state,\
     prototype_fr_state,\
-    prototype_autoencoder_state
+    prototype_autoencoder_state,\
+    prototype_sim_en
