@@ -272,7 +272,8 @@ def prototype_sim_en():
     # These are vocabulary sizes for the source and target languages
     state['n_sym_source'] = 30000 + 1
     state['n_sym_target'] = 30000 + 1
-    state['prefix'] = 'sim_en_encdec_'
+    #state['prefix'] = 'sim_en_encdec_'
+    state['prefix'] = 'sim_encdec_'
     return state
 
 def prototype_sim_en_search():
@@ -320,7 +321,8 @@ def prototype_sim_dk():
     # These are vocabulary sizes for the source and target languages
     state['n_sym_source'] = 25000 + 1
     state['n_sym_target'] = 25000 + 1
-    state['prefix'] = 'sim_dk_encdec_'
+    #state['prefix'] = 'sim_dk_encdec_'
+    state['prefix'] = 'sim_encdec_'
     return state
 
 def prototype_sim_dk_search():
