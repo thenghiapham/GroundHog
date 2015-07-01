@@ -297,7 +297,10 @@ def prototype_sim_en_search():
     state['forward'] = True
     state['backward'] = True
     state['seqlen'] = 50
-    state['sort_k_batches'] = 20
+    state['rank_n_approx'] = 620
+    state['sort_k_batches'] = 10
+    # Batch size
+    state['bs']  = 32
     state['prefix'] = 'sim_en_search_'
 
     return state
