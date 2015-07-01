@@ -263,8 +263,8 @@ def prototype_sim_en():
     state['source'] = ['/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/binarized_text.wik.shuf.h5']
     state['target'] = ['/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/binarized_text.sim.shuf.h5']
     state['indx_word'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/ivocab.wik.pkl'
-    state['indx_word_target'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/ivocab.wik.pkl'
-    state['word_indx'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/vocab.sim.pkl'
+    state['indx_word_target'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/ivocab.sim.pkl'
+    state['word_indx'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/vocab.wik.pkl'
     state['word_indx_trgt'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/vocab.sim.pkl'
         # These are end-of-sequence marks
     state['null_sym_source'] = 30000
@@ -272,7 +272,7 @@ def prototype_sim_en():
     # These are vocabulary sizes for the source and target languages
     state['n_sym_source'] = 30000 + 1
     state['n_sym_target'] = 30000 + 1
-    state['prefix'] = 'sim_encdec_'
+    state['prefix'] = 'sim_en_encdec_'
     return state
 
 def prototype_sim_en_search():
@@ -280,8 +280,8 @@ def prototype_sim_en_search():
     state['source'] = ['/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/binarized_text.wik.shuf.h5']
     state['target'] = ['/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/binarized_text.sim.shuf.h5']
     state['indx_word'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/ivocab.wik.pkl'
-    state['indx_word_target'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/ivocab.wik.pkl'
-    state['word_indx'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/vocab.sim.pkl'
+    state['indx_word_target'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/ivocab.sim.pkl'
+    state['word_indx'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/vocab.wik.pkl'
     state['word_indx_trgt'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/vocab.sim.pkl'
 
         # These are end-of-sequence marks
@@ -298,7 +298,7 @@ def prototype_sim_en_search():
     state['backward'] = True
     state['seqlen'] = 50
     state['sort_k_batches'] = 20
-    state['prefix'] = 'sim_search_'
+    state['prefix'] = 'sim_en_search_'
 
     return state
 
@@ -308,8 +308,8 @@ def prototype_sim_dk():
     state['source'] = ['/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/binarized_text.org.shuf.h5']
     state['target'] = ['/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/binarized_text.sim.shuf.h5']
     state['indx_word'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/ivocab.org.pkl'
-    state['indx_word_target'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/ivocab.org.pkl'
-    state['word_indx'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/vocab.sim.pkl'
+    state['indx_word_target'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/ivocab.sim.pkl'
+    state['word_indx'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/vocab.org.pkl'
     state['word_indx_trgt'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/vocab.sim.pkl'
         # These are end-of-sequence marks
     state['null_sym_source'] = 25000
@@ -317,7 +317,7 @@ def prototype_sim_dk():
     # These are vocabulary sizes for the source and target languages
     state['n_sym_source'] = 25000 + 1
     state['n_sym_target'] = 25000 + 1
-    state['prefix'] = 'sim_encdec_'
+    state['prefix'] = 'sim_dk_encdec_'
     return state
 
 def prototype_sim_dk_search():
@@ -325,8 +325,8 @@ def prototype_sim_dk_search():
     state['source'] = ['/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/binarized_text.org.shuf.h5']
     state['target'] = ['/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/binarized_text.sim.shuf.h5']
     state['indx_word'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/ivocab.org.pkl'
-    state['indx_word_target'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/ivocab.org.pkl'
-    state['word_indx'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/vocab.sim.pkl'
+    state['indx_word_target'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/ivocab.sim.pkl'
+    state['word_indx'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/vocab.org.pkl'
     state['word_indx_trgt'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-dk-tt/vocab.sim.pkl'
 
         # These are end-of-sequence marks
@@ -343,7 +343,7 @@ def prototype_sim_dk_search():
     state['backward'] = True
     state['seqlen'] = 50
     state['sort_k_batches'] = 20
-    state['prefix'] = 'sim_search_'
+    state['prefix'] = 'sim_dk_search_'
 
     return state
 
