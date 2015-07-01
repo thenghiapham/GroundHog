@@ -277,12 +277,12 @@ def prototype_sim_en():
 
 def prototype_sim_en_search():
     state = prototype_state()
-    state['source'] = ['/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/binarized_text.wik.shuf.h5']
-    state['target'] = ['/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/binarized_text.sim.shuf.h5']
-    state['indx_word'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/ivocab.wik.pkl'
-    state['indx_word_target'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/ivocab.sim.pkl'
-    state['word_indx'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/vocab.wik.pkl'
-    state['word_indx_trgt'] = '/home/nghia/git/GroundHog/experiments/nmt/tok-sim-en-tt/vocab.sim.pkl'
+    state['source'] = ['/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-en-tt/binarized_text.wik.shuf.h5']
+    state['target'] = ['/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-en-tt/binarized_text.sim.shuf.h5']
+    state['indx_word'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-en-tt/ivocab.wik.pkl'
+    state['indx_word_target'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-en-tt/ivocab.sim.pkl'
+    state['word_indx'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-en-tt/vocab.wik.pkl'
+    state['word_indx_trgt'] = '/home/thenghiapham/git/GroundHog/experiments/nmt/tok-sim-en-tt/vocab.sim.pkl'
 
         # These are end-of-sequence marks
     state['null_sym_source'] = 30000
